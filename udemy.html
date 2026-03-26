@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy Certifications | Divyansh</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg: #050510;
+            --text: #e2e8f0;
+            --primary: #4f8ef7;
+            --secondary: #a855f7;
+            --glass: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.1);
+            --blur: blur(12px);
+            --font-main: 'Space Grotesk', sans-serif;
+            --font-code: 'JetBrains Mono', monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-main);
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        nav { padding: 20px 5%; border-bottom: 1px solid var(--border); display: flex; align-items: center; background: var(--glass); backdrop-filter: var(--blur); position: sticky; top: 0; z-index: 100; }
+        
+        .back-btn { color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 10px; font-weight: 500; transition: 0.3s; padding: 10px 20px; border-radius: 8px; border: 1px solid var(--border); }
+        .back-btn:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+        .container { max-width: 1400px; margin: 0 auto; padding: 60px 5%; }
+        
+        .page-title { font-size: 3rem; margin-bottom: 10px; }
+        .page-subtitle { color: var(--primary); font-family: var(--font-code); margin-bottom: 50px; }
+
+        .certs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 40px; }
+        
+        .cert-card { background: var(--glass); border: 1px solid var(--border); border-radius: 16px; padding: 20px; transition: 0.3s; display: flex; flex-direction: column; }
+        .cert-card:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: 0 15px 30px rgba(79,142,247,0.1); }
+        
+        .cert-img-container { width: 100%; border-radius: 8px; overflow: hidden; margin-bottom: 20px; background: #000; border: 1px solid rgba(255,255,255,0.05); }
+        .cert-img-container img { width: 100%; height: auto; display: block; transition: 0.5s; }
+        .cert-card:hover .cert-img-container img { transform: scale(1.02); }
+
+        .cert-info { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
+        .cert-name { font-weight: 600; font-size: 1.1rem; max-width: 80%; }
+        
+        .verify-link { color: var(--secondary); text-decoration: none; font-family: var(--font-code); font-size: 0.9rem; padding: 8px 16px; border: 1px solid var(--secondary); border-radius: 20px; transition: 0.3s; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+        .verify-link:hover { background: var(--secondary); color: #fff; }
+
+        @media(max-width: 768px) {
+            .certs-grid { grid-template-columns: 1fr; }
+            .page-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Udemy Certifications</h1>
+        <p class="page-subtitle">// Generative AI & No-Code Solutions</p>
+
+        <div class="certs-grid">
+            
+            <!-- Photo 1 -->
+            <div class="cert-card">
+                <div class="cert-img-container">
+                    <img src="newphoto1.png" alt="Udemy Certificate 1">
+                </div>
+                <div class="cert-info">
+                    <span class="cert-name">Build Generative AI Apps and Solutions with No-Code Tools</span>
+                    <a href="https://ude.my/UC-2f801d38-de7c-4a6a-90cb-aaf559d27854" class="verify-link" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                </div>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="cert-card">
+                <div class="cert-img-container">
+                    <img src="newphoto2.png" alt="Udemy Certificate 2">
+                </div>
+                <div class="cert-info">
+                    <span class="cert-name">Build Generative AI Apps and Solutions with No-Code Tools</span>
+                    <a href="https://ude.my/UC-2f801d38-de7c-4a6a-90cb-aaf559d27854" class="verify-link" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                </div>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="cert-card">
+                <div class="cert-img-container">
+                    <img src="newphoto3.png" alt="Udemy Certificate 3">
+                </div>
+                <div class="cert-info">
+                    <span class="cert-name">Master Generative AI & Generative AI tools (ChatGPT & more)</span>
+                    <a href="https://ude.my/UC-886ae48b-2db4-40a5-97d1-c2095783eb10" class="verify-link" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
